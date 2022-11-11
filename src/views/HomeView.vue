@@ -1,6 +1,14 @@
 <template>
   <main>
-    <div class="hero"></div>
+    <div class="hero">
+      <div class="content">
+        <h1 class="title">
+          we are creatives
+        </h1>
+        
+        <img src="@/assets/images/icon-arrow-down.svg" alt="an icon of an arrow pointing down">
+      </div>
+    </div>
   </main>
   <!-- <div>
     

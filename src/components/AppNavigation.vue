@@ -54,7 +54,7 @@ export default {
 	data() {
 		return {
 			mobile: null,
-			mobileMenu: false,
+			mobileMenu: null,
 			windowWidth: null,
 		};
 	},
