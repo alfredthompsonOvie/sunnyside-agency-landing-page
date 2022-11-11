@@ -2,13 +2,27 @@
   <main>
     <div class="hero">
       <div class="content">
-        <h1 class="title">
+        <h1 class="title hero__title">
           we are creatives
         </h1>
-        
+
         <img src="@/assets/images/icon-arrow-down.svg" alt="an icon of an arrow pointing down">
       </div>
     </div>
+    <section class="about">
+      <div class="card">
+        <div class="illustration"></div>
+      <div class="illustration__content">
+        <h2 class="title">
+          Transform your brand
+        </h2>
+        <p class="illustration__content--text">
+          we are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.
+        </p>
+        <a href="#" class="cta transform">learn more</a>
+      </div>
+      </div>
+    </section>
   </main>
   <!-- <div>
     
