@@ -1,35 +1,52 @@
 /* color palette from <https://github.com/vuejs/theme> */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
 :root {
-  --vt-c-white: #ffffff;
-  --vt-c-white-soft: #f8f8f8;
-  --vt-c-white-mute: #f2f2f2;
+	box-sizing: border-box;
 
-  --vt-c-black: #181818;
-  --vt-c-black-soft: #222222;
-  --vt-c-black-mute: #282828;
+	--SoftRed: hsl(7, 99%, 70%);
+	--Yellow: hsl(51, 100%, 49%);
+	--DarkDesaturatedCyan_Graphic_design_text: hsl(167, 40%, 24%);
+	--DarkBlue_photography_text: hsl(198, 62%, 26%);
+	--DarkModerateCyan_footer: hsl(168, 34%, 41%);
 
-  --vt-c-indigo: #2c3e50;
+	--VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+	--VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+	--DarkGrayishBlue: hsl(232, 10%, 55%);
+	--GrayishBlue: hsl(210, 4%, 67%);
+	--White: hsl(0, 0%, 100%);
 
-  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
-  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
-  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
-  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+	--fs: 1.125rem;
 
-  --vt-c-text-light-1: var(--vt-c-indigo);
-  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
-  --vt-c-text-dark-1: var(--vt-c-white);
-  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
-  box-sizing: border-box;
+	--ff-text: 'Barlow', sans-serif;
+	--ff-heading: 'Fraunces', serif;
+
+	--fw-bold: 600;
+	--fw-xbold: 700;
+	--fw-xxbold: 900;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-  min-height: 100vh;
+	min-height: 100vh;
+}
+a{
+  text-decoration: none;
+}
+button {
+  background-color: transparent;
+  border: 0;
+}
+img{
+  max-width: 100%;
+}
+ul{
+  list-style: none;
 }
