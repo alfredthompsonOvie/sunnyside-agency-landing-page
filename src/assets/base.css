@@ -36,6 +36,13 @@
 
 body {
 	min-height: 100vh;
+	font-family: var(--ff-text);
+	font-size: var(--fs);
+	font-weight: var(--fw-bold);
+}
+.cta, .title {
+	font-family: var(--ff-heading);
+	font-weight: var(--fw-xxbold);
 }
 a{
   text-decoration: none;

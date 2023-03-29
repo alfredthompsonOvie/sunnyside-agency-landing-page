@@ -1,7 +1,9 @@
 <template>
 	<nav>
 		<div class="branding">
-			<img src="../assets/images/logo.svg" alt="site logo" />
+			<router-link :to="{name: 'home'}">
+				<img src="../assets/images/logo.svg" alt="site logo" />
+			</router-link>
 		</div>
 
 		<!-- mobile nav -->
@@ -17,16 +19,16 @@
 		<!-- mobile menu -->
 		<ul class="mobileNav" v-if="mobileMenu">
 			<li>
-				<a href="#" class="mobileNav__link">About</a>
+				<router-link to="#about" class="mobileNav__link">About</router-link>
+			</li> 
+			<li>
+				<router-link :to="{name: 'services'}" class="mobileNav__link">Services</router-link>
 			</li>
 			<li>
-				<a href="#" class="mobileNav__link">Services</a>
+				<router-link :to="{name: 'crojects'}" class="mobileNav__link">Projects</router-link>
 			</li>
 			<li>
-				<a href="#" class="mobileNav__link">Projects</a>
-			</li>
-			<li>
-				<a href="#" class="mobileNav__link mobileNav__cta">Contact</a>
+				<router-link :to="{name: 'contact'}" class="mobileNav__link mobileNav__cta">Contact</router-link>
 			</li>
 		</ul>
 

@@ -31,11 +31,6 @@ main {
   text-align: center;
   text-transform: uppercase;
 }
-.title {
-  /* font-size: 2rem; */
-  font-family: var(--ff-heading);
-  font-weight: var(--fw-xbold);
-}
 h2.title {
   color: var(--VeryDarkDesaturatedBlue);
 }
@@ -48,7 +43,6 @@ h2.title {
   text-align: center;
 }
 .card {
-  min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
@@ -56,14 +50,22 @@ h2.title {
 .illustration {
   grid-row: 1;
   grid-column: 1;
-  background-image: url(images/mobile/image-transform.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 10em;
+
+  /* background-color: red; */
 }
-.illustration__content {
+.card picture {
+  /* background-color: green; */
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+.illustration__content, .card__content {
   padding: 4em 1em;
+  /* background-color: aqua; */
 }
 .illustration__content > * {
   margin-bottom: 1em;
@@ -73,6 +75,10 @@ h2.title {
   font-size: var(--fs);
   color: var(--DarkBlue_photography_text);
 }
+.text {
+  max-width: 550px;
+  margin-inline: auto;
+}
 .cta {
   display: inline-block;
   margin-bottom: 0em;
@@ -80,7 +86,7 @@ h2.title {
   color: var(--VeryDarkDesaturatedBlue);
   font-weight: var(--fw-xbold);
   position: relative;
-  padding: 0 .5em;
+  padding: 0 .7em;
 }
 .cta::before {
   content: "";
@@ -90,11 +96,13 @@ h2.title {
   height: 7px;
   width: 100%;
   border-radius: 10px;
-  background-color: var(--SoftRed);
+  /* background-color: var(--SoftRed); */
   z-index: -1;
 }
 .transform.cta::before {
   background-color: var(--Yellow);
+  /* background-color: var(--SoftRed); */
+  opacity: .45;
 
 }
 .attribution { font-size: 11px; text-align: center; }
@@ -105,9 +113,39 @@ h2.title {
 /*! ======================================================================== */
 /*! ======================================================================== */
 /*! MEDIA QUARIES */
-@media (min-width: 700px) {
+@media (min-width: 600px){
+  .card {
+    grid-template-rows: repeat(2, 30em);
+  }
+}
+@media (min-width: 768px) {
   .hero {
     background-image: url(images/desktop/image-header.jpg);
+  }
+  .about {
+    text-align: left;
+  }
+  .card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    min-height: 80vh;
+  }
+  .illustration {
+    grid-row: 1;
+    grid-column: 2;
+    /* background-image: url(images/desktop/image-transform.jpg); */
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+    /* padding: 10em; */
+  }
+  .illustration__content {
+    padding: 4em;
+    grid-row: 1;
+    grid-column: 1;
+    align-self: center;
+    
   }
 }
 @media (min-width: 1024px) {
